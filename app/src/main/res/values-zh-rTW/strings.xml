@@ -27,6 +27,9 @@
     <string name="insert_tag_ipv6">公網IPv6</string>
     <string name="insert_tag_ip_list">IP地址列表</string>
     <string name="insert_tag_net_type">網路狀態</string>
+    <string name="insert_tag_contact_name">來源姓名</string>
+    <string name="insert_tag_phone_area">来源歸屬</string>
+    <string name="insert_tag_rule_title">規則別名</string>
 
     <string name="type_param_sms">簡訊</string>
     <string name="type_param_call">通話</string>
@@ -183,6 +186,8 @@
     <string name="add_rule_first">請先去設置轉發規則頁面添加</string>
     <string name="add_frpc_first">請先去設置FRPC頁面添加</string>
     <string name="add_task_first">請先去設置自動任務頁面添加</string>
+    <string name="rule_title">規則別名</string>
+    <string name="rule_title_tips">可選。範例：將快遞驗證碼轉發到釘釘</string>
     <string name="select_sender">發送通道</string>
     <string name="rule_tester">規則匹配測試</string>
     <string name="test_sim_slot">測試模擬的接收卡槽</string>
@@ -216,6 +221,13 @@
     <string name="switch_rule_status">啟用該條轉發規則</string>
     <string name="invalid_match_value">匹配的值不可為空</string>
     <string name="invalid_call_type">通話類型不正確，只能填寫1到6的任意一個數字</string>
+    <string name="mon">星期一</string>
+    <string name="tue">星期二</string>
+    <string name="wed">星期三</string>
+    <string name="thu">星期四</string>
+    <string name="fri">星期五</string>
+    <string name="sat">星期六</string>
+    <string name="sun">星期日</string>
     <!--SenderActivity-->
     <string name="sun">星期日</string>
     <string name="delete_sender_title">發送通道操作確認</string>
@@ -255,6 +267,8 @@
     <string name="enable_starttls">開啟StartTLS</string>
     <string name="email_account">發件郵箱</string>
     <string name="email_password">登錄密碼</string>
+    <string name="email_from_alias">發件郵箱別名</string>
+    <string name="email_from_alias_tips">選填，用於顯示發件人地址</string>
     <string name="email_nickname">發件人昵稱</string>
     <string name="email_to">收件人郵箱</string>
     <string name="email_to_tips">提示：點擊按鈕添加收件人郵箱</string>
@@ -262,8 +276,18 @@
     <string name="email_to_smime_tips">提示：點擊按鈕添加收件人郵箱、S/MIME加密公鑰（可選）</string>
     <string name="email_to_openpgp">收件人郵箱 &amp; OpenPGP加密公鑰</string>
     <string name="email_to_openpgp_tips">提示：點擊按鈕添加收件人郵箱、OpenPGP加密公鑰（可選）</string>
+    <string name="email_to_openkeychain">收件人郵箱（OpenKeychain自動匹配公鑰）</string>
+    <string name="email_to_openkeychain_tips">提示：加密公鑰由OpenKeychain按收件人郵箱自動匹配，需先在OpenKeychain中導入對應公鑰</string>
     <string name="sender_smime_keystore">發件人S/MIME簽名私鑰（可選）</string>
     <string name="sender_openpgp_keystore">發件人OpenPGP簽名私鑰（可選）</string>
+    <string name="sender_openkeychain_sign_key">發件人OpenKeychain簽名密鑰（可選）</string>
+    <string name="openkeychain_sign_key_none">未選擇（只加密不簽名）</string>
+    <string name="openkeychain_select_sign_key">選擇簽名密鑰</string>
+    <string name="openkeychain_clear_sign_key">清除</string>
+    <string name="openkeychain_sign_key_selected">已選擇簽名密鑰：%s</string>
+    <string name="openkeychain_sign_key_tips">提示：簽名密鑰若設有密碼，請在OpenKeychain中開啟密碼緩存，否則後台轉發時簽名會失敗</string>
+    <string name="openkeychain_not_installed">未安裝OpenKeychain，請先安裝：https://www.openkeychain.org</string>
+    <string name="openkeychain_check_failed">OpenKeychain加密預檢失敗：%s</string>
     <string name="invalid_sender_keystore">發件人簽名私鑰無效</string>
     <string name="recipient_email">收件人郵箱</string>
     <string name="keystore_base64">指定證書</string>
@@ -301,7 +325,12 @@
     <string name="server_chan_openid_hint">選填，多個openid用半角逗號,隔開</string>
     <string name="TelegramApiToken">ApiToken 或 自定義代理地址(http開頭)</string>
     <string name="TelegramChatId">被通知人(或群組)的ChatId</string>
+    <string name="TelegramMessageThreadId">被通知群組對應的Topic</string>
     <string name="Method" formatted="false">請求方式</string>
+    <string name="parse_mode">解析模式</string>
+    <string name="parse_mode_text">Text</string>
+    <string name="parse_mode_html">Html</string>
+    <string name="parse_mode_markdown">MarkdownV2</string>
 
     <string name="SmsSimSlot">發送卡槽</string>
     <string name="same_source">原進原出</string>
@@ -325,6 +354,8 @@
     <string name="forward_sms_tips">請授予讀取簡訊、通知類簡訊、發送簡訊等權限，關閉驗證碼保護</string>
     <string name="sms_command">簡訊指令</string>
     <string name="sms_command_tips">根據簡訊指令開關對應功能，指令格式：smsf#功能名#動作名</string>
+    <string name="close_to_earpiece_turn_off_screen">靠近聽筒關屏</string>
+    <string name="close_to_earpiece_turn_off_screen_tips">手動關閉系統超時鎖屏後，蓋住聽筒即可關屏並保持喚醒狀態</string>
     <string name="safe_phone_tips">僅處理指定手機請求，多個手機以逗號分隔</string>
     <string name="forward_calls">轉發通話記錄</string>
     <string name="forward_calls_tips">請授予讀取通話記錄、聯繫人等權限，並選擇轉發類型，再開啟</string>
@@ -344,6 +375,7 @@
     <string name="battery_setting">忽略電池優化設置</string>
     <string name="battery_setting_tips">請設置為手動管理：允許自啟動、允許關聯啟動、允許後台運行</string>
     <string name="unknown_number">未知號碼</string>
+    <string name="unknown_area">未知歸屬地</string>
     <string name="unsupport">您的手機不支持此設置</string>
     <string name="isIgnored">已將省電優化設置為無限制(不優化)！</string>
     <string name="isIgnored2">本界面無法直接操作系統的省電優化設置</string>
@@ -380,6 +412,7 @@
     <string name="appicon">應用圖標</string>
     <string name="user_app">用戶應用</string>
     <string name="system_app">系統應用</string>
+    <string name="tips_get_installed_apps">請先授予獲取應用列表權限</string>
     <string name="tips_notification">請先授予發送通知權限，有利於《簡訊轉發器》保活！</string>
     <string name="tips_notification_listener">請先授予《簡訊轉發器》通知使用權，否則無法轉發應用程式通知，已經自動關閉轉發！</string>
     <string name="pushplus_website">官網地址</string>
@@ -403,6 +436,7 @@
     <string name="plain">明文</string>
     <string name="smime">S/MIME</string>
     <string name="openpgp">OpenPGP</string>
+    <string name="openkeychain">OpenKeychain</string>
     <string name="proxy_settings">代理設置</string>
     <string name="proxy_none">無代理</string>
     <string name="proxy_http">HTTP</string>
@@ -420,6 +454,11 @@
     <string name="out_message_topic_hint">發送對應主題的消息</string>
     <string name="uri_type">通信方式</string>
     <string name="path">通信路徑</string>
+    <string name="qos">QoS服務品質</string>
+    <string name="qos_0">最多一次 (0)</string>
+    <string name="qos_1">最少一次 (1)</string>
+    <string name="qos_2">只一次 (2)</string>
+    <string name="retained">保留訊息（Retained Message）</string>
     <string name="path_hint">用於在使用ws進行通信時設置uri</string>
     <string name="client_id">客戶端ID</string>
     <string name="client_id_hint">如果為空則為隨機值</string>
@@ -459,6 +498,7 @@
     <string name="outgoing_call_ended">去電掛機</string>
     <string name="missed_call">未接來電</string>
     <string name="unknown_call">未知通話</string>
+    <string name="forwarding_call">來電轉接：</string>
     <string name="optional_action">可選操作：</string>
     <string name="optional_type">可選類型：</string>
     <string name="keep_alive">保活措施</string>
@@ -524,6 +564,7 @@
     <string name="one_pixel_activity">1像素透明Activity</string>
     <string name="optional">可選</string>
     <string name="TelegramChatIdTips">請按照wiki中的步驟獲取</string>
+    <string name="TelegramMessageThreadIdTips">可選，請按照wiki中的步驟獲取</string>
     <string name="tips_backup_path">備份文件存放路徑：</string>
     <string name="frpc_name">配置名稱</string>
     <string name="frpc_autorun">開機自啟</string>
@@ -572,6 +613,7 @@
     <string name="bark_url">消息鏈接</string>
     <string name="bark_url_tips">可選，例：https://github.com/pppscn/SmsForwarder</string>
     <string name="bark_level">通知級別</string>
+    <string name="bark_level_critical">重要警告：靜音模式下也會響鈴</string>
     <string name="bark_level_active">立即亮屏顯示通知</string>
     <string name="bark_level_timeSensitive">時效性通知，可在專注狀態下顯示通知</string>
     <string name="bark_level_passive">僅添加到通知列表，不會亮屏提醒</string>
@@ -584,10 +626,11 @@
     <string name="bark_encryption_key_tips">對應bark上的key</string>
     <string name="bark_encryption_iv">偏移向量</string>
     <string name="bark_encryption_iv_tips">對應bark上的iv</string>
-    <string name="bark_encryption_key_error1">加密密鑰必須是16位</string>
+    <string name="bark_encryption_key_error1">加密密鑰必須是16位 或 留空随机产生</string>
     <string name="bark_encryption_key_error2">加密密鑰必須是24位</string>
     <string name="bark_encryption_key_error3">加密密鑰必須是32位</string>
-    <string name="bark_encryption_key_error4">偏移向量必須是16位</string>
+    <string name="bark_encryption_key_error4">偏移向量必須是16位 或 留空</string>
+    <string name="bark_encryption_key_error5">GCM偏移向量必須是12位 或 留空</string>
 
     <string name="from_email_hint">填寫 @ 前面的用戶名</string>
     <string name="other_mail_type">其他郵箱</string>
@@ -622,6 +665,8 @@
     <string name="select_sender_type">請選擇發送通道類型</string>
     <string name="feishu_webhook_hint">群機器人→Webhook 地址</string>
     <string name="feishu_secret_hint">群機器人→安全設置→簽名驗證</string>
+    <string name="feishu_at_open_ids">@ 指定人 (open_id 或 user_id)</string>
+    <string name="feishu_at_open_ids_tip">填寫用戶的 open_id 或 user_id，多個用英文逗號分隔，留空則不@</string>
     <string name="pushplus_token_hint">請前往對應的官網地址獲取</string>
     <string name="choose_rule">下拉選擇，關鍵字模糊匹配</string>
     <string name="choose_sender">下拉選擇，關鍵字模糊匹配</string>
@@ -630,6 +675,8 @@
     <string name="choose_app">已裝APP列表</string>
     <string name="extra_app">額外消除應用通知</string>
     <string name="extra_app_hint">一行一個包名\n開啟異步加載App列表以便選擇</string>
+    <string name="app_notify_blacklist">APP通知關鍵詞黑名單</string>
+    <string name="app_notify_blacklist_hint">一行一個關鍵詞，支持正則表達式\n通知標題或內容命中任一關鍵詞則不轉發</string>
     <string name="choose_app_hint">下拉選擇獲取包名，關鍵字模糊匹配APP名稱</string>
     <string name="regex_multi_match" tools:ignore="TypographyDashes">^\\s*(並且|或者)\\s(是|不是)\\s(手機號|APP包名|簡訊內容|通知內容|通知標題|卡槽信息|通話類型|UID)\\s(相等|包含|不包含|開頭|結尾|正則匹配)\\s(.*)$</string>
     <string name="privacy_content_1">歡迎使用</string>
@@ -763,6 +810,15 @@
     <string name="battery_health">健康度：%s</string>
     <string name="battery_plugged">充電器：%s</string>
     <string name="battery_plugged_title">充電器</string>
+    <string name="battery_voltage_title">電池電壓（mV）</string>
+    <string name="battery_temperature_title">電池溫度（℃）</string>
+    <string name="battery_health_title">電池健康度</string>
+    <string name="battery_health_changed">，【電池健康度】發生變化：</string>
+    <string name="battery_voltage_range_error">最低電壓不能大於最高電壓</string>
+    <string name="battery_temperature_range_error">最低溫度不能大於最高溫度</string>
+    <string name="condition_match_type_title">條件組合方式</string>
+    <string name="condition_match_all">全部滿足</string>
+    <string name="condition_match_any">任一滿足</string>
 
     <string name="server_history">歷史記錄</string>
     <string name="server_test">登入服務</string>
@@ -800,6 +856,7 @@
     <string name="reach_level_min">【電量預警】已達到電量預警下限，請及時充電！%s</string>
     <string name="reach_level_max">【電量預警】已達到電量預警上限，請拔掉充電器！%s</string>
     <string name="battery_status_changed">【充電狀態】發生變化：</string>
+    <string name="battery_status_required">至少選擇一個充電狀態</string>
     <string name="no_indentation_allowed_on_the_first_line">第一行不允許縮進</string>
     <string name="sign_required">服務端啟用簽名密鑰，sign節點必傳</string>
     <string name="timestamp_required">服務端啟用簽名密鑰，timestamp節點必傳</string>
@@ -829,6 +886,7 @@
     <string name="optional_components">可選組件：</string>
     <string name="enable_cactus">啟用 Cactus 增強保活措施（會增加耗電）</string>
     <string name="enable_cactus_tips">雙進程前台服務/JobScheduler/WorkManager/1像素/無聲音樂</string>
+    <string name="music_interval">喚醒間隔</string>
     <string name="load_app_list">啟動時異步獲取已安裝App列表</string>
     <string name="load_app_list_tips">用於加速進入應用列表/編輯轉發規則下拉選擇/替換{{APP_NAME}}</string>
     <string name="load_app_list_toast">開啟異步獲取已安裝App列表時必選一個類型</string>
@@ -997,6 +1055,12 @@
     <string name="task_resend_error">必须至少选择一個「原轉發狀態」</string>
     <string name="task_task">啟停任務</string>
     <string name="task_task_tips">控制【自動任務】的啟用/禁用</string>
+    <string name="task_wol">遠端喚醒</string>
+    <string name="task_wol_tips">發送WOL魔術封包喚醒區域網路裝置</string>
+    <string name="wol_description">喚醒裝置 %s</string>
+    <string name="wol_method">喚醒方式</string>
+    <string name="wol_method_local_api">透過本地服務API(需啟用伺服端WOL功能)</string>
+    <string name="wol_method_magic_packet">直接傳送幻數據包(無需啟用伺服端)</string>
 
     <string name="second">秒</string>
     <string name="minute">分</string>
@@ -1152,7 +1216,13 @@
     <string name="alarm_vibration_effect_1">強振動 100ms</string>
     <string name="alarm_vibration_effect_2">弱振動 100ms</string>
     <string name="alarm_vibration_effect_3">不振動 100ms</string>
-    <string name="alarm_settings_error">播放音樂/振動手機必須至少開啟一個</string>
+    <string name="alarm_flash_settings">閃爍手機</string>
+    <string name="alarm_flash_effect">閃光效果</string>
+    <string name="alarm_flash_effect_tips">語法：1或X[開啟閃光燈]，0或O[關閉閃光燈]，每次300毫秒</string>
+    <string name="alarm_flash_effect_1">開啟閃光燈 300毫秒</string>
+    <string name="alarm_flash_effect_2">關閉閃光燈 300毫秒</string>
+    <string name="alarm_settings_error">播放音樂/振動手機/閃爍手機必須至少開啟一個</string>
+
 
     <string name="invalid_tag" formatted="false">%s 標籤無效：%s</string>
     <string name="invalid_task_name">請輸入任務名稱</string>
